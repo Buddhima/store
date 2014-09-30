@@ -84,11 +84,16 @@
                                                     <a class="asset-category" href="#">{{../../singular}}</a>
                                                 </li>
                                                 <li>
-                                                    <h4>{{t "Author"}}</h4>
+                                                    <h4>{{t "Creator"}}</h4>
                                                     <a class="asset-author" href="#">{{overview_creator}}</a>
                                                 </li>
 
                                             </ul>
+                                            {{#dyn asset=../type}}
+                                                {{#mergeContext ssoParam=../../../../../sso userParam=../../../../../user thisAsset=../../this}}
+                                                    {{>top-asset-utilization}}
+                                                {{/mergeContext}}
+                                            {{/dyn}}
                                         </div>
                                     </div>
                                 </div>
@@ -146,11 +151,16 @@
                                                     <a class="asset-category" href="#">{{../../singular}}</a>
                                                 </li>
                                                 <li>
-                                                    <h4>{{t "Author"}}</h4>
+                                                    <h4>{{t "Creator"}}</h4>
                                                     <a class="asset-author" href="#">{{overview_creator}}</a>
                                                 </li>
 
                                             </ul>
+                                            {{#dyn asset=../type}}
+                                                {{#mergeContext ssoParam=../../../../../sso userParam=../../../../../user thisAsset=../../this}}
+                                                    {{>top-asset-utilization}}
+                                                {{/mergeContext}}
+                                            {{/dyn}}
                                         </div>
                                     </div>
                                 </div>

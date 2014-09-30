@@ -46,6 +46,11 @@
         return caramel.url(path);
     });
 
+    Handlebars.registerHelper('url2', function (path) {
+        var full = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+        return full+path;
+    });
+
     /**
      * Registers  't' handler for translating texts.
      * {{t "programming"}}

@@ -1,0 +1,47 @@
+{{#with asset}}
+    {{#attributes}}
+        {{#if ../../inDashboard}}
+            <input type="button"  class="btn btn-success btn-large" onclick="goToRecipeApp()"
+               data-toggle="modal"
+               data-aid="{{../../id}}" data-type="{{../../type}}" value="{{t "Use Recipe"}}"/>
+
+        {{else}}
+
+            {{#if ../../../sso}}
+                {{#if ../../../../user.username}}
+                    <input type="button"  class="btn btn-success btn-large" onclick="goToRecipeApp()"
+                       data-toggle="modal"
+                       data-aid="{{../../../../id}}"
+                       data-type="{{../../../../type}}" value="{{t "Use Recipe"}}">
+                {{else}}
+                    <!--a  class="btn btn-success btn-large" href="{{url "/login"}}"
+                       data-toggle="modal"
+                       data-aid="{{../../../../id}}"
+                       data-type="{{../../../../type}}"> {{t "Use Recipe"}}</a-->
+                {{/if}}
+            {{else}}
+                <input type="button"  class="btn btn-success btn-large" onclick="goToRecipeApp()"
+                   data-toggle="modal"
+                   data-aid="{{../../id}}" data-type="{{../../type}}" value="{{t "Use Recipe"}}">
+            {{/if}}
+
+        {{/if}}
+        <input id="redirectUrlToRecipeApp" type="hidden" value="{{url "/../recipe-app"}}/asts/dish/create_dish?resources={{overview_url}}"/>
+        <input id="recipeAppPostingUrl" type="hidden" value="{{url "/../recipe-app"}}/asts/dish/create_dish"/>
+        <input id="recipeData" type="hidden" value='{{dump this}}'/>
+     {{/attributes}}
+{{/with}}
+
+
+<script>
+    function goToRecipeApp(){
+        var redirect = document.getElementById('redirectUrlToRecipeApp').value;
+//        var postingUrl = document.getElementById('recipeAppPostingUrl').value;
+//        var postingData = document.getElementById('recipeData').value;
+//        postingData = jQuery.parseJSON(postingData);
+
+//        jQuery.post(postingUrl, postingData);
+
+        window.location.href = redirect;
+    }
+</script>

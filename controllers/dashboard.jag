@@ -1,5 +1,7 @@
 <%
 var caramel;
+// Redirect to Recipe-App Dashboard
+response.sendRedirect('/recipe-app/asts/dish/dashboard');
 
 require('/modules/store.js').exec(function (ctx) {
     var tag, type, recentGadgets, recentSites, recentEBooks,typeCount,
