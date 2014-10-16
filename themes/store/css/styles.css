@@ -1909,3 +1909,11 @@ a.tn-welcome {
 a.tn-welcome {
     color:#aaa;
 }
+
+.h-page-title {
+    font-weight:400;
+    color:#333;
+    letter-spacing: -1px;
+    margin-top:0;
+    margin-bottom:10px;
+}
