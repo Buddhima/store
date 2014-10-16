@@ -1,18 +1,18 @@
 {{#with asset}}
     {{#attributes}}
         {{#if ../../inDashboard}}
-            <input type="button"  class="btn btn-success btn-large" onclick="goToRecipeApp()"
+            <input type="button"  class="btn-use-recipe" onclick="goToRecipeApp()"
                data-toggle="modal"
-               data-aid="{{../../id}}" data-type="{{../../type}}" value="{{t "Use Recipe"}}"/>
+               data-aid="{{../../id}}" data-type="{{../../type}}" value="{{t "Use This Recipe"}}"/>
 
         {{else}}
 
             {{#if ../../../sso}}
                 {{#if ../../../../user.username}}
-                    <input type="button"  class="btn btn-success btn-large" onclick="goToRecipeApp()"
+                    <input type="button"  class="btn-use-recipe" onclick="goToRecipeApp()"
                        data-toggle="modal"
                        data-aid="{{../../../../id}}"
-                       data-type="{{../../../../type}}" value="{{t "Use Recipe"}}">
+                       data-type="{{../../../../type}}" value="{{t "Use This Recipe"}}">
                 {{else}}
                     <!--a  class="btn btn-success btn-large" href="{{url "/login"}}"
                        data-toggle="modal"
@@ -20,9 +20,9 @@
                        data-type="{{../../../../type}}"> {{t "Use Recipe"}}</a-->
                 {{/if}}
             {{else}}
-                <input type="button"  class="btn btn-success btn-large" onclick="goToRecipeApp()"
+                <input type="button"  class="btn-use-recipe" onclick="goToRecipeApp()"
                    data-toggle="modal"
-                   data-aid="{{../../id}}" data-type="{{../../type}}" value="{{t "Use Recipe"}}">
+                   data-aid="{{../../id}}" data-type="{{../../type}}" value="{{t "Use This Recipe"}}">
             {{/if}}
 
         {{/if}}

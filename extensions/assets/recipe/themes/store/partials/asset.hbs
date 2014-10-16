@@ -6,19 +6,20 @@
         {{#attributes}}
             <div class="asset-description-header">
                 <div class="row">
-                    <div class="span9">
+                    <div class="span7x">
                         <div class="asset-banner">
                             <img src="{{#if overview_banner}}{{overview_url}}/{{overview_banner}}{{/if}}">
                         </div>
                         <div class="asset-introduction-box">
-                            <img src="{{#if overview_thumbnail}}{{overview_url}}/{{overview_thumbnail}}{{/if}}">
+                            <!--img src="{{#if overview_thumbnail}}{{overview_url}}/{{overview_thumbnail}}{{/if}}"-->
 
                             <h4>{{overview_name}}</h4>
-                            <small> {{t "Version"}} {{overview_version}}</small>
+                            <p>Save all your incoming tweets in to a google spreadsheet and send an email to your gmail. Sample content goes here.{{recipe_description}}</p>
+                            <!--small> {{t "Version"}} {{overview_version}}</small-->
                             <small> {{t "by"}} {{overview_creator}} </small>
-					<span class="asset-rating">
-                            <div style="width:{{../rating.ratingPx}}px"></div>
-                    </span>
+                            <span class="asset-rating">
+                                    <div style="width:{{../rating.ratingPx}}px"></div>
+                            </span>
                           {{>asset-utilization ../../.}}
                          </div>
 

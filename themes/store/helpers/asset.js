@@ -51,7 +51,7 @@ var formatAssetFromProviderRatings=function(context){
 };
 
 var ratingToPixels = function(avg) {
-	var STAR_WIDTH = 84;
+	var STAR_WIDTH = 60;
 	var MAX_RATING = 5;
 
 	var ratingPx = (avg / MAX_RATING) * STAR_WIDTH;
