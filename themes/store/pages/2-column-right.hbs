@@ -41,22 +41,41 @@
 
 <body>
 {{include header}}
-{{include navigation}}  
-<div id="container-assets" class="container">
+{{include navigation}}
 
-    <div class="row">
-        <div class="span9 store-left">
-          
-            {{include body}}
-        </div>
-        <div class="span3 store-right">
-            {{include right}}
-        </div>
 
-    </div>
-    {{>footer}}
+
+<div class="wr-main">
+
+<!-- left column -->
+<div class="wr-left">
+     {{include body}}
 </div>
-<!-- /container -->
+<!-- /left column -->
+
+<!-- right column -->
+<div class="wr-right  wr-main-extra">
+
+    <!-- right content -->
+    <div class="wr-left-container">
+         {{include right}}
+         <br class="c-both" />
+    </div>
+    <!-- /right content -->
+
+</div>
+<!-- /right column -->
+
+<br class="c-both" />
+
+</div>
+
+
+
+<div class="wr-footer">
+     {{>footer}}
+</div>
+
 
 <!-- Le javascript
 ================================================== -->

@@ -54,7 +54,7 @@ var mouseStop = function() {
 			top : -4
 		}, 200);
 		opened = opened && details.stop(true, true).animate({
-			top : 200
+			top : 110
 		}, 200) ? false : opened;
 	});
 

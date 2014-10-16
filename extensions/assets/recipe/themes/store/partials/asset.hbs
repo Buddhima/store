@@ -5,20 +5,21 @@
     {{#with asset}}
         {{#attributes}}
             <div class="asset-description-header">
-                <div class="row">
-                    <div class="span9">
+                <div>
+                    <div>
                         <div class="asset-banner">
                             <img src="{{#if overview_banner}}{{overview_url}}/{{overview_banner}}{{/if}}">
                         </div>
                         <div class="asset-introduction-box">
-                            <img src="{{#if overview_thumbnail}}{{overview_url}}/{{overview_thumbnail}}{{/if}}">
+                            <!--img src="{{#if overview_thumbnail}}{{overview_url}}/{{overview_thumbnail}}{{/if}}"-->
 
                             <h4>{{overview_name}}</h4>
-                            <small> {{t "Version"}} {{overview_version}}</small>
+                            <p>{{recipe_description}}</p>
+                            <!--small> {{t "Version"}} {{overview_version}}</small-->
                             <small> {{t "by"}} {{overview_creator}} </small>
-					<span class="asset-rating">
-                            <div style="width:{{../rating.ratingPx}}px"></div>
-                    </span>
+                            <span class="asset-rating">
+                                    <div style="width:{{../rating.ratingPx}}px"></div>
+                            </span>
                           {{>asset-utilization ../../.}}
                          </div>
 

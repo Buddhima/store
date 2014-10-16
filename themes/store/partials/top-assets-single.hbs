@@ -1,3 +1,4 @@
+<!--
 {{#if popularAssets}}
     <div id="asset-slideshow-cont">
         <div class="html_carousel">
@@ -43,16 +44,17 @@
     </div>
     <div id="slideshow-clearfix"></div>
 {{/if}}
+-->
 
 {{#each assets}}
-    <div class="assets-container">
+    <!--div class="assets-container">
         <h3 class="asset-type-default asset-title-separator asset-type-{{type}}"><span><a href="{{url "/assets/"}}{{type}}?sort=recent">Recent {{plural}}</a></span>
             <div class="pagination top-asset-slideshow-pag assetSliderPag" id="top-asset-slideshow-pag-{{type}}"></div>
-        </h3>
+        </h3-->
 
         <div class="top-asset-slideshow-cont">
-            <div class="html_carousel">
-                <div class="assetSlider" id="top-asset-slideshow-{{type}}">
+            <div class="html_carouselx">
+                <div class="assetSliderx" id="top-asset-slideshow-{{type}}">
                     {{#if assets}}
                         {{#each assets}}
                             {{#attributes}}
@@ -72,24 +74,24 @@
                                             <a href="{{url "/assets"}}/{{../type}}/{{../id}}"><h4>{{overview_name}}</h4>
                                             </a>
                                         </div>
+                                        <div class="asset-author-category">
+                                            <ul>
+                                                <li>
+                                                    <!--h4>{{t "Author"}}</h4-->
+                                                    by <a class="asset-author" href="#">{{overview_creator}}</a>
+                                                </li>
+                                                <!--li>
+                                                    <h4>{{t "Category"}}</h4>
+                                                    <a class="asset-category" href="#">{{../../singular}}</a>
+                                                </li-->
+                                            </ul>
+                                        </div>
                                         <div class="asset-rating">
                                             <div class="asset-rating-{{../rating/average}}star">
 
                                             </div>
                                         </div>
-                                        <div class="asset-author-category">
-                                            <ul>
-                                                <li>
-                                                    <h4>{{t "Category"}}</h4>
-                                                    <a class="asset-category" href="#">{{../../singular}}</a>
-                                                </li>
-                                                <li>
-                                                    <h4>{{t "Author"}}</h4>
-                                                    <a class="asset-author" href="#">{{overview_creator}}</a>
-                                                </li>
 
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
                             {{/attributes}}
@@ -103,9 +105,10 @@
             </div>
 
         </div>
-    </div>
+    <!--/div-->
 {{/each}}
 
+<!--
 {{#each popAssets}}
     <div class="assets-container">
         <h3 class="asset-type-default asset-title-separator asset-type-{{type}}"><span><a href="{{url "/assets/"}}{{type}}?sort=popular">Popular {{plural}}</a></span>
@@ -167,4 +170,4 @@
         </div>
     </div>
 {{/each}}
-
+-->
