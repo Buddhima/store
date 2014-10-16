@@ -6,7 +6,7 @@ body .store-left {
     padding-top: 0;
     border:0px solid #ff0000 !important;
     padding:0px;
-    background:#fff;
+    margin-left:1px;
 }
 .asset-description-header h2 {
     margin-top: 12px;
@@ -178,7 +178,7 @@ label.error {
     font-weight: 700;
     font-size: 30px;
     color:#333333;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
 }
 .asset-introduction-box p {
     font-size:14px;

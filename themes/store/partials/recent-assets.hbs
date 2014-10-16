@@ -1,16 +1,15 @@
-<div class="row">
-    <div class="span3">
+
         <h4><i class="icon-time"></i>{{t "Recently Added"}}</h4>
         {{#slice . count="20" size="20"}}
             {{#each .}}
-                <div class="row-fluid recently-added">
+                <div class="sub-side-assets">
                     {{#attributes}}
-                        <div class="span3">
+                        <div class="sub-side-asset-img">
                             <a href="{{url "/assets"}}/{{../type}}/{{../id}}"><img src="{{#if overview_thumbnail}}{{overview_url}}/{{overview_thumbnail}}{{/if}}"></a>
                         </div>
-                        <div class="span9">
-                            <strong><a href="{{url "/assets"}}/{{../type}}/{{../id}}">{{overview_name}}</a></strong>
-                            <small>by <a href="#">{{overview_creator}}</a></small>
+                        <div class="sub-side-asset-desc">
+                            <span class="t-sub-side-asset"><a href="{{url "/assets"}}/{{../type}}/{{../id}}">{{overview_name}}</a></span><br />
+                            <span class="sub-asset-author">by <a href="#">{{overview_creator}}</a></span>
                             <span class="star-rating">
                             	<div class="asset-rating">
                                     <!--<div class="asset-rating-{{../rating}}star"></div>-->
@@ -18,10 +17,8 @@
                                 </div>
                             </span>
                         </div>
+                        <br class="c-both" />
                     {{/attributes}}
                 </div>
             {{/each}}
-            <hr/>
         {{/slice}}
-    </div>
-</div>
