@@ -1790,8 +1790,18 @@ input.btn-use-recipe:hover {
     display:block;
     height:60px;
     width:100px;
-    background: url("../img/logo.png") repeat-x;
+    background: url("../img/logo.png") no-repeat;
     margin-top:15px;
+    padding-left:105px;
+}
+
+.brand span {
+    font-size:22px;
+    color:#f0f0f0;
+}
+
+.brand:hover {
+    text-decoration:none;
 }
 
 #container-assets {
