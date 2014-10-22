@@ -1780,14 +1780,14 @@ a.tn-welcome {
     display: inline-block;
     margin-right:20px;
     border-radius: 50px;
-    color: #ffffff;
+    color: #f57b20 !important;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     border:0px solid #fff;
 }
 
 .btn-my-cafe:hover {
-    color:#aaa;
+    color:#aaa !important;
     text-decoration: none;
 }
 

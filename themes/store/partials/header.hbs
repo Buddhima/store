@@ -9,10 +9,10 @@
 
 							{{#if user}}
 							<div class="btn-user-logged-in">
-								<a href="{{url "/dashboard"}}" class="btn-my-cafe"><i class="icon-tasks"></i> {{t "My Cafe"}}</a>
+								<a href="{{url "/dashboard"}}" class="btn-my-cafe">{{t "My Cafe"}}</a>
 								<span class="tn-sep">|&nbsp;</span>
 								<a href="#" class="tn-welcome"><i class="icon-userx"></i>welcome, {{user.username}} </b></a>
-                                {{#if sso}}<a href="{{url "/logout"}}"><i class="icon-signout"></i> {{t "Sign out"}} </a>{{else}}<a id="btn-signout" href="#"><i class="icon-signout"></i> {{t "Sign out"}} </a>{{/if}}
+                                {{#if sso}}<a href="{{url "/logout"}}">{{t "Sign out"}} </a>{{else}}<a id="btn-signout" href="#"><i class="icon-signout"></i> {{t "Sign out"}} </a>{{/if}}
 							</div>
 							{{else}}
 							{{#if sso}}
