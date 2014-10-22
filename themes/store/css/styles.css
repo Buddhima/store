@@ -903,20 +903,17 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     height: 180px;
     overflow: hidden;
     position: relative;
+
 }
 .asset a:hover {
     text-decoration: none;
 }
 .asset-icon {
-    position: relative;
+    margin-bottom:10px;
+    border-radius: 4px;
 }
 .asset-icon-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,.7);
+
 }
 .asset-icon-overlay i {
     color: #FFFFFF;
@@ -929,20 +926,18 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     width: 100%;
 }
 .asset-icon img {
-    position: absolute;
+
     border: medium none;
     margin: 0;
     width: 100%;
 }
 
 .asset-details {
-    height: 200px;
+
     left: 0;
     padding: 8px 15px 0;
-    position: absolute;
     right: 0;
-    background: none repeat scroll 0 0 #3e3e3e;
-    top: 110px;
+
 }
 
 .asset-rating {
@@ -985,7 +980,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .asset-name {
     color: #e0e0e0;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 200;
     max-height: 39px;
     overflow: hidden;
 }
@@ -1513,113 +1508,6 @@ ol.linenums li {
     position:fixed;
 }
 
-@media all and (max-width: 980px) {
-    .asset {
-        height: 217px !important;
-    }
-    .asset-details {
-
-        top: 167px;
-    }
-    .asset-add-btn {
-        bottom: 47px;
-    }
-    .asset-download-btn {
-        bottom: 47px;
-    }
-    #container-search.affix {
-        /* margin: 0 0 0 -360px !important;*/
-        margin-left:0;
-    }
-}
-
-@media all and (max-width: 1200px) {
-    /*
-     .store-right {
-     margin-left: 0;
-     }
-     */
-    .asset-details {
-        /*top: 166px !important;*/
-        border-left: none;
-    }
-    .asset {
-
-    }
-    #container-search.affix {
-        /* margin: 0 0 0 -468px;*/
-        margin-left:0;
-    }
-    /*
-     .asset-intro-box {
-     background: none repeat scroll 0 0 #FFFFFF;
-     border-bottom: 1px solid #ECF0F1;
-     border-left: 1px solid #ECF0F1;
-     bottom: 0;
-     left: 464px;
-     padding: 20px;
-     position: absolute;
-     right: 0;
-     top: 0;
-     width: 205px;
-     z-index: 998;
-     }
-     */
-    .store-right {
-        border-left: none;
-        padding-left: 0;
-    }
-
-    .recently-added {
-        float: left;
-        height: 95px;
-        margin-bottom: 10px;
-        width: 33%;
-    }
-
-    .store-right {
-
-        background: none;
-        margin: 0;
-    }
-    .store-right hr {
-        display: none;
-    }
-    #asset-slideshow-prev {
-        right: 13px;
-    }
-
-    .navbar-fixed-top, .navbar-fixed-bottom {
-        position: fixed;
-    }
-
-    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    /*
-     .asset-description-header .asset-intro-box {
-            left: 56%;
-            right: -1px;
-            background: #fff;
-        }*/
-
-
-    .container:not(#container-search) > .row > div:first-child {
-        /* margin-left: 9px !important;  */
-    }
-
-}
-
-/*
-@media all and (min-width: 1212px) {
-   .asset-description-header .asset-intro-box {
-        left: 48%;
-
-    }
-}
-*/
 
 /* custom css added 2014-10-07 */
 
@@ -1836,8 +1724,8 @@ input.btn-use-recipe:hover {
 .wr-left {
     float:left;
     width:650px;
-    padding:15px 5px 15px 15px;
-    background:#fff;
+    padding:0px 5px 15px 0px;
+
     border-radius: 8px;
 }
 
@@ -1865,7 +1753,7 @@ input.btn-use-recipe:hover {
 }
 
 .sub-side-asset-img img {
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .sub-side-asset-desc {
@@ -1875,9 +1763,13 @@ input.btn-use-recipe:hover {
 }
 
 .t-sub-side-asset a {
-    color:#555;
+    color:#666;
     font-size:14px;
-    font-weight: 700;
+    font-weight: 200;
+}
+
+.t-sub-side-asset a:hover {
+    color:#222 !important;
 }
 
 a.tn-welcome {
@@ -1923,9 +1815,17 @@ a.tn-welcome {
 }
 
 .h-page-title {
-    font-weight:400;
+    font-weight:200;
     color:#333;
     letter-spacing: -1px;
     margin-top:0;
     margin-bottom:10px;
+}
+
+.wr-recent-assets {
+    margin-top:28px;
+}
+
+.h-right-nugget {
+    font-weight:200;
 }

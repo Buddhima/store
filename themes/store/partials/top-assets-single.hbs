@@ -59,27 +59,29 @@
                     {{#if assets}}
                         {{#each assets}}
                             {{#attributes}}
-                                <div class="slide asset" data-id="{{../id}}" data-type="{{../type}}">
+                                <div class="ctrl-thumb-asset" data-id="{{../id}}" data-type="{{../type}}">
+
                                     <a href="#">
-                                        <div class="asset-icon">
+                                        <div class="lbl-thumb-asset-img">
                                             {{#if ../indashboard}}
-                                                <i class="icon-bookmark store-bookmark-icon"></i>
+                                                <!--i class="icon-bookmark store-bookmark-icon"></i-->
                                             {{/if}}
                                             <a href="{{url "/assets"}}/{{../type}}/{{../id}}"><img
-                                                    src="{{#if overview_thumbnail}}{{overview_url}}/{{overview_thumbnail}}{{/if}}"></a>
-                                        </div>
-                                    </a>
-
-                                    <div class="asset-details">
-                                        <div class="asset-name">
-                                            <a href="{{url "/assets"}}/{{../type}}/{{../id}}"><h4>{{overview_name}}</h4>
+                                                    src="{{#if overview_thumbnail}}{{overview_url}}/{{overview_thumbnail}}{{/if}}">
                                             </a>
                                         </div>
-                                        <div class="asset-author-category">
+                                     </a>
+
+                                    <div>
+                                        <div class="lbl-thumb-asset-title">
+                                            <a href="{{url "/assets"}}/{{../type}}/{{../id}}"><span>{{overview_name}}</span>
+                                            </a>
+                                        </div>
+                                        <div>
                                             <ul>
                                                 <li>
                                                     <!--h4>{{t "Author"}}</h4-->
-                                                    by <a class="asset-author" href="#">{{overview_creator}}</a>
+                                                    <span class="lbl-thumb-asset-author">by <a href="#">{{overview_creator}}</a></span>
                                                 </li>
                                                 <!--li>
                                                     <h4>{{t "Category"}}</h4>
@@ -94,6 +96,8 @@
                                         </div>
 
                                     </div>
+
+
                                 </div>
                             {{/attributes}}
                         {{/each}}

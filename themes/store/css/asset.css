@@ -160,7 +160,7 @@ label.error {
 
 .asset-introduction-box {
     clear:both;
-    padding: 25px 20px;
+    padding: 25px 20px 25px 10px;
 }
 
 .asset-introduction-box img {
@@ -171,14 +171,13 @@ label.error {
     margin-bottom: 5px;
     line-height: normal;
     max-height: 59px;
-    overflow: hidden;
 }
 .asset-introduction-box h4 {
     font-family: "Open Sans";
-    font-weight: 700;
+    font-weight: 200;
     font-size: 30px;
     color:#333333;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
 }
 .asset-introduction-box p {
     font-size:14px;

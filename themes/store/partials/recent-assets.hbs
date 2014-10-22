@@ -1,5 +1,6 @@
 
-        <h4><i class="icon-time"></i>{{t "Recently Added"}}</h4>
+        <h4 class="h-right-nugget"><i class="icon-time"></i>{{t "Recently Added"}}</h4>
+        <div class="wr-recent-assets">
         {{#slice . count="20" size="20"}}
             {{#each .}}
                 <div class="sub-side-assets">
@@ -22,3 +23,4 @@
                 </div>
             {{/each}}
         {{/slice}}
+        </div>
