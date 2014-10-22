@@ -1829,3 +1829,20 @@ a.tn-welcome {
 .h-right-nugget {
     font-weight:200;
 }
+
+.sign-in-request {
+    border:1px solid #f0f0f0;
+    border-radius:4px;
+    padding:13px 20px 2px 20px;
+    background:#fff;
+    color:#555;
+    text-align: center;
+}
+
+.sign-in-request p {
+    background: url("../img/ico-alert.png") no-repeat;
+    padding-left:30px;
+    text-align: left;
+    padding-bottom:5px;
+
+}
