@@ -1652,8 +1652,8 @@ input.btn-use-recipe:hover {
 }
 
 .wr-header {
-    background: url("../img/bg-header.png") repeat-x;
-    height:80px;
+    background:#292e38 url("../img/bg-headerx.png") repeat-x;
+    height:70px;
 }
 
 .wr-header-inner {
@@ -1665,13 +1665,15 @@ input.btn-use-recipe:hover {
 .wr-header-inner .left-brand {
     float:left;
     width:150px;
+    margin-left:0px;
 }
 
 .wr-header-inner .right-links {
     float:right;
     width:400px;
     text-align: right;
-    padding-top:15px;
+    padding:23px 20px;
+    border:0px solid #ff0000;
 }
 
 .wr-header-inner .left-brand a.brand {
@@ -1773,16 +1775,18 @@ input.btn-use-recipe:hover {
 }
 
 a.tn-welcome {
-    color:#aaa;
+    color:#aaa !important;
+    margin-right:20px;
+    font-size:12px;
 }
 
 .btn-my-cafe {
     display: inline-block;
     margin-right:20px;
     border-radius: 50px;
-    color: #f57b20 !important;
-    font-weight: 700;
-    font-size: 15px;
+    color: #aaa !important;
+    font-weight: 200;
+    font-size: 13px;
     border:0px solid #fff;
 }
 
@@ -1795,17 +1799,25 @@ a.tn-welcome {
     padding-top:0px;
 }
 
-.ctrl-tn  a {
+.ctrl-tn a {
     color:#fff;
+    font-size:12px;
 }
 
+.ctrl-tn a:hover {
+    color:#fff !Important
+}
 .btn-user-logged-in {
-    margin-top:10px;
 }
 
 .tn-sep  {
-    color:#666;
-    font-size:19px;
+color:#666;
+    font-size:1px;
+    border-left:1px solid #555;
+    padding-top:36px;
+    padding-bottom:32px;
+    margin-right:22px;
+}
 }
 
 a.tn-welcome {

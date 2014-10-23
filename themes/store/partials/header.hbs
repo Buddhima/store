@@ -1,7 +1,7 @@
 <div class="wr-header" id="container-header">
     <div class="wr-header-inner">
     <div class="left-brand">
-        <a href="{{url "/"}}" class="brand"><span>IPAAS</span></a>
+        <a href="{{url "/"}}" class="brand"><span>iPaaS</span></a>
     </div>
 
     <div class="right-links">
@@ -9,9 +9,11 @@
 
 							{{#if user}}
 							<div class="btn-user-logged-in">
+							<span class="tn-sep"></span>
 								<a href="{{url "/dashboard"}}" class="btn-my-cafe">{{t "My Cafe"}}</a>
-								<span class="tn-sep">|&nbsp;</span>
+								<span class="tn-sep"></span>
 								<a href="#" class="tn-welcome"><i class="icon-userx"></i>welcome, {{user.username}} </b></a>
+								<span class="tn-sep"></span>
                                 {{#if sso}}<a href="{{url "/logout"}}">{{t "Sign out"}} </a>{{else}}<a id="btn-signout" href="#"><i class="icon-signout"></i> {{t "Sign out"}} </a>{{/if}}
 							</div>
 							{{else}}
