@@ -1558,6 +1558,21 @@ a.btn-sign-in:hover {
     color:#fff;
 }
 
+.btn-sign-inx {
+    margin-right:20px;
+}
+
+.btn-user-not-logged-in a {
+    display:inline-block;
+    padding:13px 0px !important;
+    color:#aaa !important;
+}
+
+.btn-user-not-logged-in a i {
+    display:block;
+    text-align: center;
+}
+
 input.btn-use-recipe {
     display: inline-block;
     background: #5fb548;
@@ -1672,7 +1687,7 @@ input.btn-use-recipe:hover {
     float:right;
     width:400px;
     text-align: right;
-    padding:23px 20px;
+    padding:0px 20px;
     border:0px solid #ff0000;
 }
 
@@ -1790,6 +1805,13 @@ a.tn-welcome {
     border:0px solid #fff;
 }
 
+.btn-my-cafe i, .ctrl-tn i {
+    display:block;
+    text-align: center;
+    font-size:18px;
+    color: #aaa;
+}
+
 .btn-my-cafe:hover {
     color:#aaa !important;
     text-decoration: none;
@@ -1800,24 +1822,29 @@ a.tn-welcome {
 }
 
 .ctrl-tn a {
-    color:#fff;
+    color:#aaa;
     font-size:12px;
+    display:inline-block;
+    padding:13px 0;
+}
+
+.ctrl-tn i.icon-white {
+    font-size:18px;
 }
 
 .ctrl-tn a:hover {
-    color:#fff !Important
-}
-.btn-user-logged-in {
+    color:#fff !Important;
+    text-decoration:none;
 }
 
+
 .tn-sep  {
-color:#666;
+    color:#666;
     font-size:1px;
     border-left:1px solid #555;
-    padding-top:36px;
-    padding-bottom:32px;
+    padding-top:43px;
+    padding-bottom:24px;
     margin-right:22px;
-}
 }
 
 a.tn-welcome {

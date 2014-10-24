@@ -10,20 +10,30 @@
 							{{#if user}}
 							<div class="btn-user-logged-in">
 							<span class="tn-sep"></span>
-								<a href="{{url "/dashboard"}}" class="btn-my-cafe">{{t "My Cafe"}}</a>
+								<a href="{{url "/dashboard"}}" class="btn-my-cafe"><i class="icon-coffee icon-white">&nbsp;</i>{{t "My Cafe"}}</a>
 								<span class="tn-sep"></span>
-								<a href="#" class="tn-welcome"><i class="icon-userx"></i>welcome, {{user.username}} </b></a>
+								<a href="#" class="tn-welcome"><i class="icon-user icon-white">&nbsp;</i>welcome, {{user.username}} </b></a>
 								<span class="tn-sep"></span>
-                                {{#if sso}}<a href="{{url "/logout"}}">{{t "Sign out"}} </a>{{else}}<a id="btn-signout" href="#"><i class="icon-signout"></i> {{t "Sign out"}} </a>{{/if}}
+                                {{#if sso}}<a href="{{url "/logout"}}"><i class="icon-signout icon-white">&nbsp;</i>{{t "Sign out"}}</a>
+                                {{else}}
+                                <a id="btn-signout" href="#"><i class="icon-signout icon-white">&nbsp;</i>{{t "Sign out"}} </a>
+                                {{/if}}
 							</div>
 							{{else}}
 							{{#if sso}}
-								<a href="{{url "/login"}}" class="btn-sign-inx">{{t "Sign in"}}</a>
-								<span class="tn-sep">|&nbsp;</span>
-								<a href="{{url "/login"}}" id="btn-register" class="btn-register">{{t "Register"}}</a>
+							<div class="btn-user-not-logged-in">
+							    <span class="tn-sep"></span>
+								<a href="{{url "/login"}}" class="btn-sign-inx"><i class="icon-signin icon-white">&nbsp;</i>{{t "Sign in"}}</a>
+								<span class="tn-sep"></span>
+								<a href="{{url "/login"}}" id="btn-register" class="btn-registerx"><i class="icon-chevron-sign-up icon-white">&nbsp;</i>{{t "Register"}}</a>
+							</div>
 							{{else}}
+							<div class="btn-user-not-logged-in">
+                            	<span class="tn-sep"></span>
 							    <a href="#">{{t "Sign in"}}</a>
+							    <span class="tn-sep"></span>
 								<a id="btn-register" >{{t "Register"}}</a>
+							</div>
 							{{/if}}
 							{{/if}}
 
