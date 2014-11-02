@@ -40,7 +40,7 @@
 
                         if (user.loginWithSAML(sessionObj.loggedInUser)) {
                             log.debug('user is set :::' + sessionObj.loggedInUser);
-                            relayState=relayState + '../recipe-app/';
+                            relayState = relayState.replace(/store(.*)/,'recipe-app');
                             response.sendRedirect(relayState);
                         }
                         else{
